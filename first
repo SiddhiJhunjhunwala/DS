@@ -1,0 +1,88 @@
+#include<stdio.h>
+#include<conio.h>
+#include<malloc.h>
+
+
+struct medicine{
+     int product_no;
+     char name[50];
+     int price;
+     struct medicine *next;
+} *start;
+
+void printMenu(){
+   printf("1.View menu\n");
+   printf("2.Add to Cart\n");
+   printf("3.View waiting list\n");
+   printf("4.Confirm and place order\n");
+}
+
+void displayMed(){
+	struct medicine *temp;
+	temp=start;
+	while(temp!=NULL){
+		printf("%d. %s ..........%d\n",temp->product_no,temp->name,temp->price);
+		temp=temp->next;
+	}
+}
+
+void createMenu(int no[], char name[], int pri[]){
+   int i;
+   struct medicine *temp;
+
+
+   for(i=0;i<13;i++){
+	struct medicine *newnode=(struct medicine*)malloc(sizeof(struct medicine));
+
+	newnode->name= name[i];
+	newnode->product_no=no[i];
+	newnode->price=pri[i];
+	if(start==NULL){
+		 start=newnode;
+	}
+	else{
+		temp=start;
+		while(temp->next!=NULL){
+			temp=temp->next;
+		}
+	temp->next=newnode;
+
+	}
+   }
+
+}
+
+void show(){
+	int choice;
+	printMenu();
+	scanf("%d",&choice);
+	while(choice!=4){
+		switch(choice){
+		   case 1:displayMed();				
+		   break;
+		    case 2:
+		   break;
+		    case 3:
+		   break;
+		    case 4:
+		   break;
+		   default: printf("Invalid choice");
+		}
+	printMenu();
+	scanf("%d",&choice);
+	}
+}
+
+void main(){
+
+     //	char name[][]={"First Aid Kit","Ibuprofen","Paracetamol","Dexamethasone","Loratadine","Anthelminthics","Pyrantel","Ampicillin","Linezolid","Dapsone","Amphotericin B","Ribavirin","Quinine","Doxycilin"};
+	char name[]={'a','b','c','d','e','r','t','j','r','f','s','c','q','a'};
+	int no[]={11,12,33,44,45,66,77,88,99,10,41,21,31,41};
+	int pri[]={140,588,433,157,153,125,420,154, 147,953,458,125,153,412};
+	clrscr();
+	createMenu(name,no,pri);
+	show();
+	getch();
+}
+
+
