@@ -6,11 +6,6 @@
       Implementation of online Pharmacy using stacks, queues, linked lists.
     <br />
     <br />
-  
-    ·
-    <a href="https://github.com/SakshiUppoor/trana/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/SakshiUppoor/trana/issues">Request Feature</a>
   </p>
 </p>
 
