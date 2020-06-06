@@ -13,7 +13,8 @@
     <a href="https://github.com/SakshiUppoor/trana/issues">Request Feature</a>
   </p>
 </p>
-## Team
+
+<h3>Team </h3>
 * <a href="https://github.com/SiddhiJhunjhunwala"><b>Siddhi Jhunjhunwala</b></a> 
 * <a href="https://github.com/yash-chad"><b>Yash Chachad</b></a> 
 
