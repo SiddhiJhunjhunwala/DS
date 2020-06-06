@@ -1,8 +1,7 @@
 <p align="center">
 # DS-Pharma-Pro
-<p>Sem3 Data structures project <br/>
+Sem3 Data structures project <br/>
   Implementation of online Pharmacy using stacks, queues, linked lists.
-</p>
 </p>
 ## Team
 * <a href="https://github.com/SiddhiJhunjhunwala"><b>Siddhi Jhunjhunwala</b></a> 
